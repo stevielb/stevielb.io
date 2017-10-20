@@ -63,9 +63,8 @@ body {
     .menuButton.open:hover {
         background-color:#40FEFE;
     }
-
     .menuButton:hover {
-        background-color: #00FFFF;
+        background-color: #c040f8;
         cursor:pointer;
     }
 }
@@ -271,7 +270,7 @@ p{font-size:12pt;}
 }
 
 .menuButton.open {
-    background:#00D800;
+    background:#40FEFE;
 }
 
 .menuContent {
