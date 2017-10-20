@@ -1,7 +1,7 @@
 /*
 Manage windows in a scroll down menu
 
-time: 255
+time: 512
 */
 
 $(document).ready(function(){
@@ -35,15 +35,15 @@ $(document).ready(function(){
             $iOpen = $thisScroll.children('.open').index();
             $indexOpen = ':nth-child('+String($iOpen + 1)+')';
             if ($i == $iOpen) {
-                $thisContent.children($index).slideUp(255, function(){
+                $thisContent.children($index).slideUp(512, function(){
                     $thisMenu.removeClass('scrolling');
                 });
                 $thisMenu.removeClass('open');
                 $(this).removeClass('open');
-                $backUpButtons.animate({opacity:0},255);
+                $backUpButtons.animate({opacity:0},512);
             } else {
-                $thisContent.children($indexOpen).slideUp(255, function(){
-                    $thisContent.children($index).slideDown(255, function(){
+                $thisContent.children($indexOpen).slideUp(512, function(){
+                    $thisContent.children($index).slideDown(512, function(){
                         $thisMenu.removeClass('scrolling');
                     });
                 });
@@ -54,13 +54,13 @@ $(document).ready(function(){
             /*for testing purposes*/
             $("#dataBar").text(String($i) +':i,iopen:'+ String($iOpen));
         } else {/*the menu is closed*/
-            $thisContent.children($index).slideDown(255, function(){
+            $thisContent.children($index).slideDown(512, function(){
                 $thisMenu.removeClass('scrolling');
             });
             $thisMenu.addClass('open');
             $(this).addClass('open');
             $("#dataBar").text(String($i) + 'hello');
-            $backUpButtons.animate({opacity:1},255);
+            $backUpButtons.animate({opacity:1},512);
         }
     });
 
@@ -76,11 +76,11 @@ $(document).ready(function(){
         $thisScroll = $thisBar.children('.menuScroll');
         $iOpen = $thisScroll.children('.open').index();
         $indexOpen = ':nth-child('+String($iOpen + 1)+')';
-        $thisContent.children($indexOpen).slideUp(255);
+        $thisContent.children($indexOpen).slideUp(512);
         $thisScroll.children($indexOpen).removeClass('open');
         $thisMenu.removeClass('open');
-        $(this).parent().children('.button').animate({opacity:0},255);
-        $(this).parent().children('a').children('.button').animate({opacity:0},255);
+        $(this).parent().children('.button').animate({opacity:0},512);
+        $(this).parent().children('a').children('.button').animate({opacity:0},512);
         $("#dataBar").append('iopen:'+ String($iOpen));
     });
 });
