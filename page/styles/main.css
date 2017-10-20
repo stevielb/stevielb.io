@@ -41,10 +41,10 @@ body {
 }
 @media (min-device-width: 800px) {
     .maindiv {
-        width: 85%;
+        width: 80%;
         margin-bottom: 60px;
         margin-top: 40px;
-        border-radius: 20px;
+        border-radius: 60px;
     }
     .menuTitle {
         display: inline-block;
@@ -110,7 +110,7 @@ hide a hidden message in the html :)
 }
 #titleText {
     display: inline-block;
-    padding: 2em 0em;
+    padding: 2em 1em;
     font-weight: 700;
     margin-left: 0.375em;
     color: #FFFFFF;
@@ -122,7 +122,7 @@ hide a hidden message in the html :)
     height: 10.5em;
 }
 .content {
-    padding: 0.625em 0em;
+    padding: 0.8em 0em;
 }
 .shortLong .abstract {
     height: 25vmin;
@@ -139,7 +139,7 @@ hide a hidden message in the html :)
 }
 .menuContent,
 .intro {
-    padding: .5em 1em;
+    padding: .5em 2em;
 }
 .previewButton {
     position: relative;
@@ -148,7 +148,7 @@ hide a hidden message in the html :)
 .button {
     background: #a020f0;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 4px 10px;
     font-size: 15pt;
     display: inline;
@@ -158,14 +158,15 @@ hide a hidden message in the html :)
 a {
     text-decoration: none;
     font-weight: bold;
+    color: #a020f0;
 }
 a:link,
 a:visited {
-    color: #FFFFFF;
+    color: #20a0f0;
 }
 a:active,
 a:hover {
-    color: #AAFFAA;
+    color: #a020f0;
 }
 h1,
 h2,
@@ -177,13 +178,13 @@ h6,
     font-family: Corbel, sans-serif;
 }
 h6 {
-    font-size: 13pt;
+    font-size: 18pt;
     font-weight: 900;
     padding: 0px;
     margin: 0px;
 }
 p {
-    font-size: 12pt;
+    font-size: 15pt;
 }
 .menuDecoration {
     position: relative;
@@ -213,7 +214,7 @@ p {
 .menuHeader {
     background: #a020f0;
     cursor: default;
-    padding: 0em .625em;
+    padding: 0em .8em;
 }
 .protectHighlight {
     -webkit-touch-callout: none;
@@ -241,7 +242,8 @@ p {
 .menuButton {
     display: inline-block;
     float: left;
-    margin: 0em .1em;
+    padding: 0em .2em;
+    margin: 0em .2em;
 }
 .scrollArrow:hover {
     cursor: pointer;
@@ -251,7 +253,7 @@ p {
 .scrollArrow {
     font-weight: 900;
     font-family: Corbel, sans-serif;
-    padding: .75em 0em;
+    padding: .5em .5em;
     font-size: 19pt;
     margin-bottom: 0em
 }
