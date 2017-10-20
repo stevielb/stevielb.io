@@ -20,10 +20,10 @@ html {
     overflow-y: scroll;
 }
 ::selection {
-    background: #00D800;
+    background: #00FFFF;
 }
 ::-moz-selection {
-    background: #a020f0;
+    background: #00FFFF;
 }
 /*.shortLong, .shortLong .abstract, .shortLong .abstract .container {
     -moz-text-size-adjust:inherit;
